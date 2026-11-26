@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto escolar de Matemática: descubra como funcionam as linguagens de programação.">
+  <title>Linguagem de Programação | Projeto de Matemática</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Página inicial">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span>Conecta<span class="brand-light">Código</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#conceito">Conceito</a>
+      <a href="#linguagens">Linguagens</a>
+      <a href="#matematica">Matemática</a>
+      <a href="#laboratorio">Laboratório</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="pulse"></span> PROJETO DE MATEMÁTICA</span>
+        <h1>O mundo funciona<br>com <span>código.</span></h1>
+        <p class="hero-text">Entenda como conversamos com os computadores, conheça as principais linguagens e descubra a relação entre programação e Matemática.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#conceito">Explorar o conteúdo <span>↗</span></a>
+          <a class="text-link" href="#laboratorio">Experimentar código <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✦</span> Aprender programação é aprender a resolver problemas.</div>
+      </div>
+      <div class="hero-visual" aria-label="Ilustração de código em uma tela">
+        <div class="visual-glow"></div>
+        <div class="code-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>meu_primeiro_programa.py</span><span class="window-lock">●</span></div>
+          <div class="code-lines">
+            <div><b>01</b><code><span class="purple">nome</span> = <span class="green">"Mundo"</span></code></div>
+            <div><b>02</b><code><span class="blue">print</span>(<span class="green">"Olá, "</span> + nome)</code></div>
+            <div><b>03</b><code></code></div>
+            <div><b>04</b><code><span class="comment"># Resultado:</span></code></div>
+            <div><b>05</b><code class="output">Olá, Mundo</code></div>
+          </div>
+          <div class="window-footer"><span><i></i> Python</span><span>UTF-8&nbsp; · &nbsp;Ln 2, Col 1</span></div>
+        </div>
+        <div class="floating-chip chip-one"><span>⌘</span> Lógica</div>
+        <div class="floating-chip chip-two"><span>∑</span> Matemática</div>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="stats section-wrap">
+      <div><strong>01</strong><span>ideia principal</span></div>
+      <div><strong>05</strong><span>linguagens em destaque</span></div>
+      <div><strong>03</strong><span>experiências interativas</span></div>
+      <div><strong>∞</strong><span>possibilidades</span></div>
+    </section>
+
+    <section class="content-section section-wrap" id="conceito">
+      <div class="section-heading">
+        <span class="eyebrow">01 — FUNDAMENTOS</span>
+        <h2>O que é uma linguagem<br>de programação?</h2>
+        <p>É um conjunto de regras e comandos que permite escrever instruções para um computador executar.</p>
+      </div>
+      <div class="concept-grid">
+        <article class="info-card concept-main">
+          <div class="card-icon blue-icon">⌨</div>
+          <h3>Uma forma de dar instruções</h3>
+          <p>Assim como usamos idiomas para nos comunicar, usamos linguagens de programação para indicar ao computador o que fazer. Essas instruções precisam seguir regras chamadas <strong>sintaxe</strong>.</p>
+          <div class="mini-flow"><span>Problema</span><b>→</b><span>Algoritmo</span><b>→</b><span>Código</span><b>→</b><span>Resultado</span></div>
+        </article>
+        <article class="info-card">
+          <div class="card-icon purple-icon">◇</div>
+          <h3>Algoritmo</h3>
+          <p>É uma sequência finita e organizada de passos para resolver um problema ou realizar uma tarefa.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon green-icon">{ }</div>
+          <h3>Programa</h3>
+          <p>É um conjunto de instruções escritas em uma linguagem que pode ser interpretada ou compilada para execução.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section soft-section" id="linguagens">
+      <div class="section-wrap">
+        <div class="section-heading centered">
+          <span class="eyebrow">02 — CONHEÇA AS FERRAMENTAS</span>
+          <h2>Cada linguagem tem<br>seu propósito.</h2>
+          <p>Existem muitas linguagens. Algumas são mais usadas em sites, outras em aplicativos, sistemas, jogos e pesquisas.</p>
+        </div>
+        <div class="language-grid">
+          <article class="language-card">
+            <div class="language-top"><span class="language-symbol python-symbol">Py</span><span class="tag">Versátil</span></div>
+            <h3>Python</h3><p>Tem sintaxe simples e é muito usada em automação, ciência de dados e inteligência artificial.</p>
+            <code>print("Olá, mundo!")</code>
+          </article>
+          <article class="language-card">
+            <div class="language-top"><span class="language-symbol js-symbol">JS</span><span class="tag">Web</span></div>
+            <h3>JavaScript</h3><p>Adiciona interatividade a páginas e aplicações web, como menus, jogos e formulários.</p>
+            <code>console.log("Olá!");</code>
+          </article>
+          <article class="language-card">
+            <div class="language-top"><span class="language-symbol java-symbol">♨</span><span class="tag">Aplicações</span></div>
+            <h3>Java</h3><p>É utilizada em sistemas corporativos, aplicações e diversos projetos de grande porte.</p>
+            <code>System.out.println("Oi");</code>
+          </article>
+          <article class="language-card">
+            <div class="language-top"><span class="language-symbol c-symbol">C</span><span class="tag">Desempenho</span></div>
+            <h3>Linguagem C</h3><p>Conhecida pelo desempenho e pelo uso em sistemas operacionais e programação de baixo nível.</p>
+            <code>printf("Olá, mundo!");</code>
+          </article>
+          <article class="language-card">
+            <div class="language-top"><span class="language-symbol scratch-symbol">✦</span><span class="tag">Visual</span></div>
+            <h3>Scratch</h3><p>Usa blocos visuais para ensinar lógica, sequências, eventos e criação de histórias e jogos.</p>
+            <code>quando clicar → diga "Oi!"</code>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="matematica">
+      <div class="math-layout">
+        <div class="section-heading">
+          <span class="eyebrow">03 — MATEMÁTICA + TECNOLOGIA</span>
+          <h2>Programar também<br>é pensar matematicamente.</h2>
+          <p>A Matemática ajuda a organizar o raciocínio, identificar padrões e construir soluções. A programação transforma essas ideias em instruções.</p>
+          <ul class="check-list">
+            <li><span>✓</span> Lógica e resolução de problemas</li>
+            <li><span>✓</span> Operações e expressões numéricas</li>
+            <li><span>✓</span> Variáveis, funções e relações</li>
+            <li><span>✓</span> Sequências, padrões e geometria</li>
+          </ul>
+        </div>
+        <div class="math-card">
+          <div class="math-card-header"><span>EXEMPLO DE ALGORITMO</span><span class="live-label">● AO VIVO</span></div>
+          <div class="math-equation">y = 2x + 3</div>
+          <p>Uma expressão matemática pode ser representada em código.</p>
+          <div class="math-code"><span class="code-muted">// Para x = 4</span><br><span class="code-key">let</span> x = 4;<br><span class="code-key">let</span> y = 2 * x + 3;<br><span class="code-fn">console.log</span>(y);</div>
+          <div class="math-result"><span>Resultado calculado</span><strong>11</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section soft-section" id="laboratorio">
+      <div class="section-wrap">
+        <div class="section-heading centered">
+          <span class="eyebrow">04 — MÃO NA MASSA</span>
+          <h2>Seu primeiro laboratório<br>de programação.</h2>
+          <p>Altere os valores e veja como as instruções mudam o resultado. Não precisa instalar nada!</p>
+        </div>
+        <div class="lab-grid">
+          <article class="lab-card">
+            <div class="lab-title"><div><span class="lab-number">01</span><h3>Calculadora de expressões</h3></div><span class="tag">Matemática</span></div>
+            <p>Escolha dois números e uma operação. O JavaScript fará o cálculo.</p>
+            <div class="calculator">
+              <label for="numA">Primeiro número</label><input id="numA" type="number" value="12">
+              <label for="operation">Operação</label>
+              <select id="operation"><option value="+">Adição (+)</option><option value="-">Subtração (−)</option><option value="*">Multiplicação (×)</option><option value="/">Divisão (÷)</option></select>
+              <label for="numB">Segundo número</label><input id="numB" type="number" value="3">
+              <button class="button primary full" id="calculateBtn">Calcular resultado <span>→</span></button>
+              <div class="calc-result" aria-live="polite"><span>RESULTADO</span><strong id="calcResult">15</strong></div>
+            </div>
+          </article>
+          <article class="lab-card">
+            <div class="lab-title"><div><span class="lab-number">02</span><h3>Entenda uma condição</h3></div><span class="tag">Lógica</span></div>
+            <p>Computadores podem tomar decisões seguindo condições: SE algo acontecer, ENTÃO faça determinada ação.</p>
+            <div class="condition-demo">
+              <div class="condition-code"><span class="code-muted">// Exemplo em JavaScript</span><br><span class="code-key">if</span> (nota >= 7) {<br>&nbsp; resultado = <span class="code-string">"Aprovado"</span>;<br>} <span class="code-key">else</span> {<br>&nbsp; resultado = <span class="code-string">"Em recuperação"</span>;<br>}</div>
+              <label for="gradeRange">Escolha uma nota: <strong id="gradeValue">8</strong></label>
+              <input id="gradeRange" type="range" min="0" max="10" step="0.5" value="8">
+              <div class="condition-result" id="gradeResult" aria-live="polite"><span>✓</span><div><strong>Aprovado</strong><small>A nota é igual ou maior que 7.</small></div></div>
+            </div>
+          </article>
+        </div>
+        <div class="lab-card quiz-teaser">
+          <div><span class="lab-number">03</span><h3>Teste seus conhecimentos</h3><p>Responda ao quiz no final da página e confira sua pontuação.</p></div>
+          <a class="button secondary" href="#quiz">Ir para o quiz <span>↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="quiz">
+      <div class="quiz-panel">
+        <div class="quiz-intro">
+          <span class="eyebrow">05 — DESAFIO FINAL</span>
+          <h2>Você entendeu<br>o essencial?</h2>
+          <p>Responda às perguntas e descubra quantos conceitos você já domina.</p>
+          <div class="quiz-score"><strong id="scoreNumber">0/4</strong><span>acertos</span></div>
+        </div>
+        <div class="quiz-questions" id="quizQuestions">
+          <div class="question" data-answer="b">
+            <h3><span>01</span> O que é uma linguagem de programação?</h3>
+            <label><input type="radio" name="q1" value="a"> Um componente físico do computador.</label>
+            <label><input type="radio" name="q1" value="b"> Um conjunto de regras para escrever instruções.</label>
+            <label><input type="radio" name="q1" value="c"> Um tipo de conexão com a internet.</label>
+          </div>
+          <div class="question" data-answer="a">
+            <h3><span>02</span> Qual linguagem é muito usada para interatividade em sites?</h3>
+            <label><input type="radio" name="q2" value="a"> JavaScript</label>
+            <label><input type="radio" name="q2" value="b"> Scratch apenas</label>
+            <label><input type="radio" name="q2" value="c"> Caderno</label>
+          </div>
+          <div class="question" data-answer="c">
+            <h3><span>03</span> O que é um algoritmo?</h3>
+            <label><input type="radio" name="q3" value="a"> Um modelo de computador.</label>
+            <label><input type="radio" name="q3" value="b"> O nome de uma linguagem.</label>
+            <label><input type="radio" name="q3" value="c"> Uma sequência de passos para resolver um problema.</label>
+          </div>
+          <div class="question" data-answer="b">
+            <h3><span>04</span> Como a Matemática se relaciona com a programação?</h3>
+            <label><input type="radio" name="q4" value="a"> Não existe relação entre elas.</label>
+            <label><input type="radio" name="q4" value="b"> Ajuda com lógica, padrões e resolução de problemas.</label>
+            <label><input type="radio" name="q4" value="c"> Serve apenas para desenhar telas.</label>
+          </div>
+          <button class="button primary" id="checkQuiz">Corrigir minhas respostas <span>→</span></button>
+          <p class="quiz-feedback" id="quizFeedback" aria-live="polite">Selecione uma alternativa em cada pergunta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-wrap">
+      <span class="eyebrow">PARA CONCLUIR</span>
+      <h2>A tecnologia começa<br>com uma ideia.</h2>
+      <p>A programação une criatividade, lógica e Matemática para transformar problemas em soluções. Aprender seus fundamentos é compreender melhor o mundo digital em que vivemos.</p>
+      <a class="button primary" href="#inicio">Voltar ao início ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">&lt;/&gt;</span> ConectaCódigo</div>
+    <p>Projeto escolar de Matemática · Linguagem de Programação</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+</body>
+</html>
